@@ -2,6 +2,7 @@
 import argparse
 import collections
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -50,11 +51,13 @@ def classify(book):
             if any(slug == prefix or slug.startswith(prefix + '-') for prefix in prefixes):
                 subject_id, label = key, name
                 break
+    words = set(re.findall(r'[\u0621-\u064A]+', title))
+    branch = 'literary' if words & {'أدبي', 'الأدبي'} else 'science' if words & {'علمي', 'العلمي'} else 'unspecified'
     result.update(subject_id=subject_id, subject_label=label,
                   subject_classification_basis='catalog_identifier_and_title',
                   subject_assignment_officially_verified=False,
-                  branch_hint='literary' if 'أدبي' in title else 'science' if 'علمي' in title else 'unspecified',
-                  branch_hint_basis='explicit_listing_title' if ('أدبي' in title or 'علمي' in title) else 'not_stated',
+                  branch_hint=branch,
+                  branch_hint_basis='explicit_listing_title' if branch != 'unspecified' else 'not_stated',
                   branch_assignment_officially_verified=False)
     return result
 
