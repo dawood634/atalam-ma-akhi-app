@@ -1,0 +1,22 @@
+services:
+  classroom:
+    build:
+      context: ..
+      dockerfile: server/Dockerfile
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      TEACHER_INVITE: ${TEACHER_INVITE:?Provision a random private teacher invitation first}
+      CLASSROOM_DATA_DIR: /data
+    volumes:
+      - classroom-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+volumes:
+  classroom-data:
