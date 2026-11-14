@@ -59,12 +59,14 @@ void main() {
     final lesson = {'id':'test-lesson', 'title':'درس اختبار', 'objective':'هدف', 'hook':'موقف', 'explanation':'شرح', 'example':'مثال', 'pitfall':'تنبيه', 'printed_page':9,
       'questions': List.generate(3, (i) => {'prompt':'سؤال $i', 'choices':['صحيح $i','خطأ $i'], 'correct':0, 'feedback':'تفسير $i'})};
     await tester.pumpWidget(MaterialApp(home: UnitLessonPage(lesson: lesson, progress: progress)));
+    final scroller = find.descendant(of: find.byType(ListView), matching: find.byType(Scrollable)).first;
     for (var i=0;i<3;i++) {
       final choice = find.text(i==0 ? 'خطأ $i' : 'صحيح $i');
-      await tester.scrollUntilVisible(choice, 200);
+      await tester.scrollUntilVisible(choice, 200, scrollable: scroller);
       await tester.tap(choice); await tester.pumpAndSettle();
+      expect(tester.widget<OutlinedButton>(find.widgetWithText(OutlinedButton, 'صحيح $i')).onPressed, isNull);
       final next = find.text(i==2 ? 'حفظ النتيجة' : 'التالي');
-      await tester.scrollUntilVisible(next, 150); await tester.tap(next); await tester.pumpAndSettle();
+      await tester.scrollUntilVisible(next, 150, scrollable: scroller); await tester.tap(next); await tester.pumpAndSettle();
     }
     expect(progress.records['test-lesson']['last'],2);
     expect(progress.records['test-lesson']['attempts'],1);
