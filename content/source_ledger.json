@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "checked_on": "2026-11-14",
   "scope": {
     "tracks": [
@@ -37,10 +37,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التربية الوطنية للصف السابع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التربية الوطنية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1cn1OMSt79LOUbyaUlBJBRrwym21EcEEe/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "civics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "geography-grade-7-sanaa",
@@ -57,10 +63,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الجغرافيا - الصف السابع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الجغرافيا",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1lOgJfznZBKvG-CgybhDWtn1K7nZ4fXqv/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "geography",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "history-grade-7-part-2-sanaa",
@@ -77,10 +89,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التاريخ للصف السابع - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التاريخ",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1W4Uexl8DoBrIWX8jGHJ6d49n2a7ttRm6/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "history",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "history-grade-7-part-1-sanaa",
@@ -97,10 +115,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التاريخ للصف السابع الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التاريخ",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1HUFZ0y4_qVQUodnTBo2e4mPLftgA7LiH/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "history",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "sciences-grade-7-part-2-sanaa",
@@ -117,10 +141,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب العلوم للصف السابع - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "العلوم",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/16EoqwqWFKtwR0M_zX89zYOq25QN2amXE/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "science",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "science-grade-7-part-1-sanaa",
@@ -137,10 +167,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب العلوم للصف السابع الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "العلوم",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1K9UUNRWHZQzb1yINIua_X_IB3yB87_8l/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "science",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "mathematics-grade-7-sanaa",
@@ -157,11 +193,17 @@
       "book_sha256": "f6ef05fefe66edbf14c91786939b17c0c80f7e215edbd0ecb669404151679517",
       "units": [],
       "title": "كتاب الرياضيات - الصف السابع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1N_bAt30Nn_a9Uamiu7cXIYkng80d9Y3e/preview",
       "checked_on": "2026-11-14",
-      "inspection_note": "Sanaa claim not yet matched to current official edition; PDF p3 visibly 1438H/2017 while extracted text layer has a conflicting date."
+      "inspection_note": "Sanaa claim not yet matched to current official edition; PDF p3 visibly 1438H/2017 while extracted text layer has a conflicting date.",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "english-grade-7-sanaa-1",
@@ -178,10 +220,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب تمارين اللغة الإنجليزية للصف السابع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة الإنجليزية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1nP4u5eEFtevADnPxGYDMLZZJ2kaXnb_U/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "english",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "english-grade-7-sanaa",
@@ -198,10 +246,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب اللغة الإنجليزية - الصف السابع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة الإنجليزية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1N_bAt30Nn_a9Uamiu7cXIYkng80d9Y3e/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "english",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "arabic-grade-7-part-2-sanaa",
@@ -218,10 +272,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب اللغة العربية للصف السابع - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة العربية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/12bb-1xZhD2ewXEa5h_IluggjXFtrNikX/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "arabic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "arabic-grade-7-part-1-sanaa",
@@ -238,11 +298,17 @@
       "book_sha256": "973a1d667bbc3db419ae20c3f619641b66ff1e94259125355ae56ad6604faec2",
       "units": [],
       "title": "كتاب اللغة العربية الجزء الأول للصف السابع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة العربية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1augV-7_-wUwkmX0KJ2AHsZm9KKEx9MdN/preview",
       "checked_on": "2026-11-14",
-      "inspection_note": "Cover visibly 1444H/2023; current official edition unconfirmed."
+      "inspection_note": "Cover visibly 1444H/2023; current official edition unconfirmed.",
+      "subject_id": "arabic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "islamic-grade-7-part-2-sanaa",
@@ -259,10 +325,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التربية الإسلامية - الصف السابع - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التربية الإسلامية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1YM478a0N_w_STGZEFxhfFA2K-gwq7rel/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "islamic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "islamic-grade-7-part-1-sanaa",
@@ -279,10 +351,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التربية الإسلامية - الصف السابع - الجزء الأول - المنهج اليمني 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التربية الإسلامية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1l4imWSUZdayV7DQbWC8p8MBOfRj6Pd1c/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "islamic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "quran-grade-7-sanaa",
@@ -299,10 +377,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القرآن الكريم للصف السابع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القرآن الكريم وعلومه",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/15a5zXm55ZfbsGQEVHOGB_7I_K2eWq8hd/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "quran",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "english-exercises-grade-8-sanaa",
@@ -319,10 +403,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب تمارين اللغة الإنجليزية للصف الثامن - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة الإنجليزية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1CbS8vsqfuJTnecFWGeb2i4wSLL3DLj0R/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "english",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "science-grade-8-part-2-sanaa",
@@ -339,10 +429,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب العلوم - الصف الثامن - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "العلوم",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1C9LsoOUhapGRpuwDTfTUcoBcNNLwhX_h/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "science",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "science-grade-8-part-1-sanaa",
@@ -359,10 +455,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب العلوم للصف الثامن - الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "العلوم",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1SjNBipktRC-c_tBaF_22IQIXEHqWiDaE/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "science",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "civic-grade-8-sanaa",
@@ -379,10 +481,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التربية الوطنية للصف الثامن - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التربية الوطنية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1Ug6qHZ5IP677elj9LqRnrhvYqhZYPKms/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "civics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "geography-continents-grade-8-sanaa",
@@ -399,10 +507,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب جغرافية القارات للصف الثامن - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الجغرافيا",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/15ZhaCr3wZCEak4JyJxOvJ_K5GjDg7Lf1/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "geography",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "history-grade-8-part-2-sanaa",
@@ -419,10 +533,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التاريخ للصف الثامن - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التاريخ",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1kXonfeVyQBYW3u2kRo1jx2V0yyb0885o/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "history",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "history-grade-8-part-1-sanaa",
@@ -439,10 +559,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التاريخ - الصف الثامن - الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التاريخ",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1aDI4flL7LGkwsConpmzOJQG8HdMhrIwF/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "history",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "english-grade-8-sanaa",
@@ -459,10 +585,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب اللغة الإنجليزية للصف الثامن - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة الإنجليزية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1TQNRgYGzpdQCZ2ik3IWjvx-ZF_jxEgHX/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "english",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "mathematics-grade-8-part-2-sanaa",
@@ -479,10 +611,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الرياضيات للصف الثامن الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/18mDv4yGGDxcU4cFP7BiYAcN6Qma1lL6R/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-grade-8-part-1-sanaa",
@@ -499,10 +637,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الرياضيات للصف الثامن - الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1NU8gWE-3oqUz8_G8zP2dwQWRPLqSfRUB/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "arabic-grade-8-part-2-sanaa",
@@ -519,10 +663,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب اللغة العربية للصف الثامن - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة العربية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1Dil5nI52QoX_WaX-dSWfh4edXxLANt6k/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "arabic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "arabic-grade-8-part-1-sanaa",
@@ -539,10 +689,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب اللغة العربية للصف الثامن - الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة العربية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/16gy7xVKowLoMRLpaVUWMeVGIktIinKFL/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "arabic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "islamic-grade-8-part-2-sanaa",
@@ -559,10 +715,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التربية الإسلامية للصف الثامن - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التربية الإسلامية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1deEg60qm0teSzOVhOzhmyKVbwefpB-51/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "islamic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "islamic-grade-8-part-1-sanaa",
@@ -579,10 +741,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التربية الإسلامية للصف الثامن - الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التربية الإسلامية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1JsVtp0odOQtUOFh3X9Qi63sYmCR9N05B/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "islamic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "quran-grade-8-sanaa",
@@ -599,10 +767,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القرآن الكريم وعلومه للصف الثامن - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القرآن الكريم وعلومه",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/110VOAzmWE8wX5D9Y1ozZpO7nAWtQVYjm/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "quran",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "sciences-grade-9-part-2-sanaa",
@@ -619,10 +793,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب العلوم - الجزء الثاني - الصف التاسع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "العلوم",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1Viwh6-JTt9exsvDmWwmf_TxcLH-OkyfS/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "science",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "science-grade-9-part-1-sanaa",
@@ -639,10 +819,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب العلوم للصف التاسع الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "العلوم",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1dncf4Mb9epWznenm5jCOaWTv6Bx7wVD2/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "science",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "civics-grade-9-sanaa",
@@ -659,10 +845,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التربية الوطنية للصف التاسع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التربية الوطنية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1rypZuZ3WBAC98jX8WkGYKGEcyqJRBvp1/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "civics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "geography-grade-9-sanaa",
@@ -679,10 +871,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الجغرافيا للصف التاسع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الجغرافيا",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1x-hj_s_T02HNSNAcsFm_WnYaIzsmfcdi/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "geography",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "history-grade-9-part-2-sanaa",
@@ -699,10 +897,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التاريخ للصف التاسع - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التاريخ",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/110eGG_CATJU5tRIaSvPCMy1W8Rr9d62F/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "history",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "history-grade-9-part-1-sanaa",
@@ -719,10 +923,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التاريخ للصف التاسع الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التاريخ",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1UAFNCNfG2T0LtOuYVd98_twLcM1OBavD/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "history",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "mathematics-grade-9-part-2-sanaa",
@@ -739,10 +949,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الرياضيات للصف التاسع - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1o-cElIeCi-8GMiV7AFSLf35_ewyZ6ozd/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-grade-9-part-1-sanaa",
@@ -759,10 +975,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الرياضيات - الصف التاسع - الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1R8syV9dXueg2NAvLzwPFM_PvDxO7kfqJ/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "arabic-grade-9-part-2-sanaa",
@@ -779,10 +1001,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب اللغة العربية للصف التاسع - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة العربية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1tYkezi5FxUY4yQh3ZDECfzCOavh6WtL7/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "arabic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "english-grade-9-sanaa-1",
@@ -799,10 +1027,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب تمارين اللغة الإنجليزية للصف التاسع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة الإنجليزية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1ro45FtdNzfhfJB37pFaoLl8J4BGE1xGD/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "english",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "english-grade-9-sanaa",
@@ -819,10 +1053,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب اللغة الإنجليزية - الصف التاسع - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة الإنجليزية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1Od6--rzvkVg1vCr2DhDyXpt9C6lu96H6/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "english",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "arabic-grade-9-part-1-sanaa",
@@ -839,10 +1079,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب اللغة العربية للصف التاسع - الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة العربية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1HQlXP1iLpS5E00-opqvB__vdVetmsjkX/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "arabic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "islamic-grade-9-part-2-sanaa",
@@ -859,10 +1105,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التربية الإسلامية - الصف التاسع - الجزء الثاني - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التربية الإسلامية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1EXKRdSwWggu41tN0dY4PR1lUZOfq_qdL/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "islamic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "islamic-grade-9-part-1-sanaa",
@@ -879,10 +1131,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التربية الإسلامية - الصف التاسع - الجزء الأول - منهج صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التربية الإسلامية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1U-93VZSbAWOkW8vUvfLSiHHuCfwGRsku/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "islamic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "quran-grade-9-sanaa",
@@ -899,10 +1157,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القرآن الكريم للصف التاسع - المنهج اليمني صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القرآن الكريم وعلومه",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/15y2T7KMQn5TlMskHtlUnRTWoQ_Q_cseo/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "quran",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "yemen-society-grade-10-sanaa",
@@ -919,10 +1183,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب المجتمع اليمني - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "المجتمع اليمني",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/17Td4grjppmY5sR0THknlKWAskAsAvxY9/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "yemen_society",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "history-grade-10-sanaa",
@@ -939,10 +1209,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التاريخ - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التاريخ",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1FUb19Z_IRLRHGhU-ypiAO7fZG21sR9wq/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "history",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "english-grade-10-sanaa",
@@ -959,10 +1235,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب اللغة الإنجليزية - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة الإنجليزية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/17Td4grjppmY5sR0THknlKWAskAsAvxY9/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "english",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "biology-grade-10-sanaa",
@@ -979,10 +1261,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأنشطة في الأحياء - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الأحياء",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1MdIu7LfNlYpiqgpu_1DSA4wNHol4IkEy/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "biology",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "biology-grade-10-sanaa-1",
@@ -999,10 +1287,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأحياء - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الأحياء",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1sa4umv2wMwg1rSMO78LTEJnm0mOHWdNY/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "biology",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "physics-grade-10-sanaa",
@@ -1019,10 +1313,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأنشطة في الفيزياء - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الفيزياء",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1KC_m5odzgQ-UUIqJAC3B9VJg8KB0l6ns/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "physics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "physics-grade-10-sanaa-1",
@@ -1039,10 +1339,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الفيزياء - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الفيزياء",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1NK3Q7iYU_XnU4kdmprQqpTjlDkyBrGZ9/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "physics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "chemistry-grade-10-sanaa-1",
@@ -1059,10 +1365,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الكيمياء - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الكيمياء",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1iY1aUOEnymfx8JZoGOr3DqatU56tANIA/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "chemistry",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "chemistry-grade-10-sanaa",
@@ -1079,10 +1391,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأنشطة في الكيمياء - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الكيمياء",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1aVX1X7gab_cMI4NsACAcEy5BZnJQ_Gha/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "chemistry",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "geography-grade-10-sanaa",
@@ -1099,10 +1417,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الجغرافيا - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الجغرافيا",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1spXOyzp3QVFaUnEjP4VPLVThghvaLZhO/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "geography",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-exercises-grade-10-sanaa",
@@ -1119,10 +1443,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التمارين في الرياضيات - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/16HfQAWnFcXdGUBw2rvnkiwwaGEzN4hkU/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-part-2-grade-10-sanaa",
@@ -1139,10 +1469,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الرياضيات - الجزء الثاني - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1s7Q1wCK677m54CEee1As5Pe6waN4tWQF/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-part-1-grade-10-sanaa",
@@ -1159,10 +1495,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الرياضيات - الجزء الأول - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1yXmDhSW-Y50KJ3fdFDcOBLKUxWv6QMgd/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "reading-part-2-grade-10-sanaa",
@@ -1179,10 +1521,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القراءة - الجزء الثاني - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القراءة",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1OX0P2G-dAT90oRKY3rbe73wEJ-ZXXjLi/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "reading",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "arabic-grade-10-sanaa",
@@ -1199,10 +1547,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأدب والنصوص والبلاغة - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الأدب والنصوص",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1p4IKNv4R2Du8kAGaxAGmi5QwnsYZDUSB/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "literature",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "grammar-morphology-grade-10-sanaa",
@@ -1219,10 +1573,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب النحو والصرف - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "النحو والصرف",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1wZAr0FuDJSoimy66-oVGyhUp93h7-7_T/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "grammar",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "reading-part-1-grade-10-sanaa",
@@ -1239,10 +1599,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القراءة - الجزء الأول - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القراءة",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/15E2BYIDyGq2_2f_LTeeK8P8rW_PbQK0U/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "reading",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "seerah-grade-10-sanaa",
@@ -1259,10 +1625,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب السيرة النبوية - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "السيرة النبوية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1dRe4ehF3YpJGhY1AjH1AOOAXa_FJtT2L/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "seerah",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "fiqh-grade-10-sanaa",
@@ -1279,10 +1651,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الفقة - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الفقه",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1RMtA4aRKry10SE_4i0pJfxRv8nnYeFFP/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "fiqh",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "hadith-grade-10-sanaa",
@@ -1299,10 +1677,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الحديث والتهذيب - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الحديث والتهذيب",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1oGUjmWpIvzcwnggX_jcofneerS0jsnln/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "hadith",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "faith-grade-10-sanaa",
@@ -1319,10 +1703,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأيمان - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الإيمان",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/12e3E2TtEg6BCpRQHwSKklePT07TZu2r9/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "faith",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "quran-grade-10-sanaa",
@@ -1339,10 +1729,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القرآن الكريم - الصف الأول الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القرآن الكريم وعلومه",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/17Td4grjppmY5sR0THknlKWAskAsAvxY9/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "quran",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "sira-part-2-grade-11-aden",
@@ -1359,10 +1755,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب السيرة - الترم الثاني - الصف الثاني الثانوي - منهج عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "السيرة النبوية",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1pcQhymm9eWzsGniPZ44PzPWB-88F7l-i/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "seerah",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "sira-part-1-grade-11-aden",
@@ -1379,10 +1781,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب السيرة - الجزء الأول - الصف الثاني الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "السيرة النبوية",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1LXe5nhUSFh4hyroO2c6w3_POr7IZRg32/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "seerah",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "iman-grade-11-aden",
@@ -1399,10 +1807,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الإيمان - الصف الثاني الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الإيمان",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1TlJhygcuJB-UJASNGGpqyyGKb5MNUkfU/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "faith",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "hadith-fiqh-part-2-grade-11-aden",
@@ -1419,10 +1833,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الحديث والفقه - الجزء الثاني - الصف الثاني الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الحديث والفقه",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1Mq6JZn6gXMzTC0MukM8enOvMrKGXc9kI/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "hadith_fiqh",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "hadith-fiqh-part-1-grade-11-aden",
@@ -1439,10 +1859,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الحديث والفقه - الجزء الأول - الصف الثاني الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الحديث والفقه",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1wixMUNKaLk3rx-Hus3RkiYR62sea1C2R/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "hadith_fiqh",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "quran-part-2-grade-11-aden",
@@ -1459,10 +1885,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القرآن الكريم وعلومه - الجزء الثاني - الصف الثاني الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القرآن الكريم وعلومه",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/17vYQB9aCvm1QpGuO7oSrVpGFavImsojD/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "quran",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "quran-part-1-grade-11-aden",
@@ -1479,11 +1911,17 @@
       "book_sha256": "7af5f102e51887b39ea6e803fa021e4376b1e55f522c82229b9955d2798bda56",
       "units": [],
       "title": "كتاب القرآن الكريم وعلومه - الجزء الأول - الصف الثاني الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القرآن الكريم وعلومه",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1ICyg0cTwT6ViLv4ZQNWMtGoMKyi__qgU/preview",
       "checked_on": "2026-11-14",
-      "inspection_note": "Cover visibly 1435H/2014; current Aden assignment unconfirmed."
+      "inspection_note": "Cover visibly 1435H/2014; current Aden assignment unconfirmed.",
+      "subject_id": "quran",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "grammar-part-2-grade-11-aden",
@@ -1500,10 +1938,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب النحو والصرف - الجزء الثاني - الصف الثاني الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "النحو والصرف",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1ytmE_uvqvbGZy_xsIry17bkl3Wv0Yxcr/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "grammar",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "grammar-part-1-grade-11-aden",
@@ -1520,10 +1964,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب النحو والصرف - الجزء الأول - الصف الثاني الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "النحو والصرف",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1VUoo-13Nv8a1ZLmkkoPOZBj8l7HTbNq5/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "grammar",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "arabic-grammar-grade-11-sanaa",
@@ -1540,10 +1990,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب النحو والصرف - الصف الثاني الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "النحو والصرف",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1QfWrHRtUNHWqCyy2QRl1ODGynemPRWGw/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "grammar",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "computer-grade-11-yemen",
@@ -1560,10 +2016,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الحاسوب - الصف الثاني الثانوي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الحاسوب",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/11OGZywVL53MtzGrKn2NpsJt-L5PRcfTV/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "computer",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "english-workbook-grade-11-yemeni",
@@ -1580,10 +2042,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب اللغة الإنجليزية التمارين English Workbook - الصف الثاني الثانوي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة الإنجليزية",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1oN5AGgfckeTtZK6-r3u7DLGld-ETDlC0/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "english",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-exercises-activities-literary-grade-11-yemeni",
@@ -1600,10 +2068,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التمارين والانشطة في الرياضيات - الصف الثاني الثانوي - أدبي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1TGLo35g1OHuWnFFtEd5ZoffYW9kYQS_m/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "literary",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-literary-grade-11-yemen",
@@ -1620,10 +2094,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الرياضيات - الصف الثاني الثانوي - أدبي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1dH6vCVw8ZO2_oGSJ2mc3mtMzsuv8dd3D/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "literary",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "economics-principles-literary-grade-11-yemeni",
@@ -1640,10 +2120,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب مبادئ علم الاقتصاد - الصف الثاني الثانوي - أدبي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "مبادئ علم الاقتصاد",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1B92rBsGylVj17vAbKJzltuQ2AD5tU53-/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "economics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "literary",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "sociology-literary-grade-11-yemen",
@@ -1660,10 +2146,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب علم الاجتماع - الصف الثاني الثانوي - أدبي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "علم الاجتماع",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1ayLTxaMtTk5bSJ1YpIjVH_bAkFgJtOD9/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "sociology",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "literary",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "arabic-reading-part-2-grade-11",
@@ -1680,10 +2172,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القراءة - الجزء الثاني - الصف الثاني الثانوي - 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القراءة",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1REdwMs0CqeMv__yczUWFYg2R6-LI665M/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "reading",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "arabic-reading-part-1-grade-11",
@@ -1700,10 +2198,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القراءة - الجزء الأول - الصف الثاني الثانوي - 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القراءة",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/15Fq_SwOgFYj-2zqfyOX8rc-MWsA2cSzh/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "reading",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "english-pupils-book-5-grade-11",
@@ -1720,10 +2224,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب اللغة الإنجليزية - الصف الثاني الثانوي - 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة الإنجليزية",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1PRw4gwSkFUHbe1Zxy7sf8JI1raiU-Sbc/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "english",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "chemistry-activities-grade-11",
@@ -1740,10 +2250,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الكيمياء - الانشطة والتجارب العلمية - الصف الثاني الثانوي - 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الكيمياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1iatGB2i1AKlRvQ3K5jGE3ZPcejdKhSmf/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "chemistry",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "science",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "chemistry-grade-11",
@@ -1760,10 +2276,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الكيمياء - الصف الثاني الثانوي - 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الكيمياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/15WuaET9w08spH-NXUmPsBOnGsq7Rc2T-/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "chemistry",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "physics-activities-grade-11",
@@ -1780,10 +2302,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الانشطة في الفيزياء - الصف الثاني الثانوي - 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الفيزياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/12NWPNORZMhFC39bBsPar3lMFCf8Am9gr/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "physics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "physics-grade-11",
@@ -1800,10 +2328,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الفيزياء - الصف الثاني الثانوي - 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الفيزياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1WV1jKnXqv73HWw6HiTtgjsDH9a8wFgcG/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "physics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "biology-exercises-grade-11",
@@ -1820,10 +2354,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التمارين والأنشطة في الأحياء - الصف الثاني الثانوي - 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الأحياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1cs58_jK8b-fdk8DjVzLlgxOSe6-jPe4P/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "biology",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "logic-research-methods-literary-grade-12",
@@ -1840,10 +2380,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب المنطق ومناهج البحث العلمي - الصف الثالث الثانوي - أدبي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "المنطق ومناهج البحث العلمي",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1fKPmQmIq1tjqZkDQ6ObWJaCmNBsLhw8h/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "logic",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "literary",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "english-activities-grade-12",
@@ -1860,10 +2406,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأنشطة في الإنجليزية - الصف الثالث الثانوي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة الإنجليزية",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1Y_8sS_mypkyo3WTZLElgO7t6_a3b3l93/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "english",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "english-grade-12",
@@ -1880,10 +2432,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأنجليزي - الصف الثالث الثانوي المنهج اليمني 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "اللغة الإنجليزية",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1fHb7-SX7pzzyqRuW0d81yrmd8e5I48XW/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "english",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "cartography-principles-literary-grade-12",
@@ -1900,10 +2458,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب مبادئ علم الخرائط - الصف الثالث الثانوي - أدبي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "مبادئ علم الخرائط",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1b7sRl7g_c_hknlPA1HGcwqfPWvfNNBPp/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "cartography",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "literary",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "history-grade-12",
@@ -1920,10 +2484,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التاريخ - الصف الثالث الثانوي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التاريخ",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/13tElGkJCArsPIkPM4woRpIF7n3WAzDHh/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "history",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "geography-grade-12",
@@ -1940,10 +2510,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الجغرافية - الصف الثالث الثانوي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الجغرافيا",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1pE_o0rKnCOW0gPeb82dXr_-54PzUaCpj/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "geography",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "psychology-literary-grade-12",
@@ -1960,10 +2536,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب علم النفس - الصف الثالث الثانوي - أدبي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "علم النفس",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1OZp3-kS4-tIacF30YpSiK7YEAkDOviyO/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "psychology",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "literary",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "philosophy-principles-literary-grade-12",
@@ -1980,10 +2562,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب مبادئ الفلسفة - الصف الثالث الثانوي - أدبي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "مبادئ الفلسفة",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1gfomQOPB46dpqyZYWD5KSD-fWCZC8P9s/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "philosophy",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "literary",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "biology-activities-grade-12",
@@ -2000,10 +2588,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأنشطة في الأحياء - الصف الثالث الثانوي المنهج اليمني 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الأحياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1S03_ASNvEE7w5iijPFbUiK0HIZ_aOmF8/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "biology",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "biology-grade-12",
@@ -2020,10 +2614,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأحياء - الصف الثالث الثانوي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الأحياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1MwpXxzkoKJMCfIIlU9poy9vURbpHmCz1/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "biology",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "activities-chemistry-grade-12",
@@ -2040,10 +2640,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأنشطة في الكيمياء - الصف الثالث الثانوي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الكيمياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1nhAcOkhhsZ8H_na37cNVvPb7JMfsBmrI/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "chemistry",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "chemistry-grade-12",
@@ -2060,10 +2666,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الكيمياء - الصف الثالث الثانوي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الكيمياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1U9vrjTNjv-2qtcu9A7Fytk8053NUPrfE/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "chemistry",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "physics-activities-experiments-grade-12",
@@ -2080,10 +2692,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأنشطة والتجارب في الفيزياء - الصف الثالث الثانوي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الفيزياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1nsyQYEGpEVPW_Ra5kci5i3JLmwXYm5J_/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "physics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "physics-grade-12",
@@ -2100,10 +2718,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الفيزياء - الصف الثالث الثانوي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الفيزياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1wfA-2QGP6zeVQvs9izXos8aj0huJHeZF/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "physics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-exercises-literary-grade-12",
@@ -2120,10 +2744,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التمارين في الرياضيات - الصف الثالث الثانوي - أدبي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1VbcjUPbcFpw1Hks0Qlo5uao9mBzj6fRi/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "literary",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-literary-grade-12",
@@ -2140,10 +2770,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الرياضيات - الصف الثالث الثانوي - أدبي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1__Id9MJPuvZQXfZqsF_J51JCM_qb6FwJ/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "literary",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-exercises-scientific-grade-12",
@@ -2160,10 +2796,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التمارين في الرياضيات - الصف الثالث الثانوي - علمي 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1nczOgwTqZamoOP0W95gGwjayF7DSQ7d4/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "science",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-scientific-grade-12",
@@ -2180,10 +2822,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الرياضيات - الصف الثالث الثانوي - علمي - المنهج اليمني 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1OaoV3ufgr6BWhpQPUkFJDkL1xnfuI58X/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "science",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "literature-grade-12-aden",
@@ -2200,10 +2848,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الادب والنصوص والنقد - الصف الثالث الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الأدب والنصوص",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1QwklTsac4DE1VwwCofWU7hCJuUWhJRXt/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "literature",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "literature-grade-12-sanaa",
@@ -2220,10 +2874,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأدب والنصوص - الصف الثالث الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الأدب والنصوص",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1wmtERhipFVuybPk0ryawdSi9-A6qAGCy/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "literature",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "grammar-grade-12-aden",
@@ -2240,10 +2900,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب النحو والصرف - الصف الثالث الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "النحو والصرف",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1P1Tmp0ZOBau9_tQNcYDK-bRDJ9mvy19L/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "grammar",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "grammar-grade-12-sanaa",
@@ -2260,10 +2926,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب النحو والصرف - الصف الثالث الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "النحو والصرف",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/17XW4gZZLbrfgBcrWerE32a0j_KdKwHXP/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "grammar",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "reading-grade-12-aden",
@@ -2280,10 +2952,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القراءة - الصف الثالث الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القراءة",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1c7L52LOHniXkrdQikhhdgg1HnZomKy9j/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "reading",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "reading-grade-12-sanaa",
@@ -2300,10 +2978,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القراءة - الصف الثالث الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القراءة",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1hJ6PiD0LSIh8fpGSkuUgZUZSaJ0_qv8I/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "reading",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "biology-grade-11",
@@ -2320,10 +3004,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأحياء - الصف الثاني الثانوي المنهج اليمني 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الأحياء",
       "claimed_track": "common",
       "public_preview_url": "https://drive.google.com/file/d/1hk2q4FPXghyPH1oP64dfYmGgZfbUvQMl/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "biology",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-exercises-scientific-grade-11-sanaa",
@@ -2340,10 +3030,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التمارين في الرياضيات - الصف الثاني الثانوي - علمي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1UDiNrFSLlmZtfOQHB8pUf6IwXfu5A3fN/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "science",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-part-2-scientific-grade-11-sanaa",
@@ -2360,10 +3056,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الرياضيات - الجزء الثاني - الصف الثاني الثانوي - علمي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1ZDlXrmdj0sLxXRpDZTbjSH4wh3V6gTsh/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "science",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "math-part-1-scientific-grade-11-sanaa",
@@ -2380,10 +3082,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الرياضيات - الجزء الأول - الصف الثاني الثانوي - علمي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الرياضيات",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1PppcQ08BF0OQAEFnzt1Y_zYpTrX1sEtx/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "mathematics",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "science",
+      "branch_hint_basis": "explicit_listing_title",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "history-grade-11-sanaa",
@@ -2400,10 +3108,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التاريخ - الجزء الثاني - الصف الثاني الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التاريخ",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/11Tw7m12bDBlFbX361g8dY8gCnmh-MjdG/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "history",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "tarikh-grade-11-sanaa",
@@ -2420,10 +3134,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب التاريخ - الجزء الأول - الصف الثاني الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "التاريخ",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/14yLE0_2ByDpFzOSEB14XvyR0aK8Lyv73/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "history",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "geography-grade-11-sanaa",
@@ -2440,10 +3160,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الجغرافيا - الصف الثاني الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الجغرافيا",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1RUw-WwRPRVMe2AilX6alo3LhWNAnHnXj/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "geography",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "arabic-grade-11-sanaa",
@@ -2460,10 +3186,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأدب والنصوص والبلاغة - الصف الثاني الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الأدب والنصوص",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1h1OxEsTwMWxV1fJAZ33GtVzL_9izUqf4/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "literature",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "fiqh-grade-11-sanaa",
@@ -2480,10 +3212,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الفقه - الصف الثاني الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الفقه",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1JiJQ1LwMicVnKLB9VFdbmFE0FYEcohVI/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "fiqh",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "seerah-grade-11-sanaa",
@@ -2500,10 +3238,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب السيرة - الصف الثاني الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "السيرة النبوية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1grA1_k-6dhcg8wcukmb-ZV_aJfXAzLxT/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "seerah",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "faith-grade-11-sanaa",
@@ -2520,10 +3264,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الأيمان - الصف الثاني الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الإيمان",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1NG_UnXcJ-sJ_P1EeyLvd26ZHSbCZEt6F/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "faith",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "hadith-grade-11-sanaa",
@@ -2540,10 +3290,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الحديث - الصف الثاني الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الحديث والتهذيب",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1hjyXVlCRbF4aD0I5-ZtC8b-T56npageQ/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "hadith",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "quran-grade-11-sanaa",
@@ -2560,10 +3316,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القرآن الكريم - الصف الثاني الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القرآن الكريم وعلومه",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1FcLPp7n8r73-YvZrzbNM-mz_-remHUOE/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "quran",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "seerah-grade-12-aden",
@@ -2580,10 +3342,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب السيرة - الصف الثالث الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "السيرة النبوية",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1rL7Dkp9I8qodL7TWFlveEUyUwr84MB6n/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "seerah",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "hadith-fiqh-grade-12-aden",
@@ -2600,10 +3368,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الحديث والفقه - الصف الثالث الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الحديث والفقه",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1cYoPzUQ9iSI7tTYV83U-lPknepVTei3Y/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "hadith_fiqh",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "seerah-grade-12-sanaa",
@@ -2620,10 +3394,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب السيرة - الصف الثالث الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "السيرة النبوية",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1p8Dm1GdTq6Jwm6GtWBVKrShE2s3bHYWd/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "seerah",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "fiqh-grade-12-sanaa",
@@ -2640,10 +3420,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الفقه - الصف الثالث الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الفقه",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/10ugrKz1bvKRvU8Lpt8jj5wSXw2EjFnsQ/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "fiqh",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "hadith-tahdheeb-grade-12-sanaa",
@@ -2660,10 +3446,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الحديث والتهذيب - الصف الثالث الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الحديث والتهذيب",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/17YVlEeujHjt1XYPxh7A6HfdF9BOK_roj/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "hadith",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "iman-grade-12-sanaa",
@@ -2680,10 +3472,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الإيمان - الصف الثالث الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الإيمان",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1m5A-bfol7RD8_8F2MCfvrqUu-t6v7Zxs/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "faith",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "iman-grade-12-aden",
@@ -2700,10 +3498,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب الإيمان - الصف الثالث الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "الإيمان",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/17Td4grjppmY5sR0THknlKWAskAsAvxY9/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "faith",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "quran-grade-12-aden",
@@ -2720,10 +3524,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القرآن الكريم - الصف الثالث الثانوي - عدن 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القرآن الكريم وعلومه",
       "claimed_track": "aden",
       "public_preview_url": "https://drive.google.com/file/d/1vDn3Tb71JEmHS2E5SbeZzTvnAkTavNDx/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "quran",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     },
     {
       "id": "quran-grade-12-sanaa",
@@ -2740,10 +3550,16 @@
       "book_sha256": null,
       "units": [],
       "title": "كتاب القرآن الكريم - الصف الثالث الثانوي - صنعاء 2026",
-      "subject_label": "غير محدد",
+      "subject_label": "القرآن الكريم وعلومه",
       "claimed_track": "sanaa",
       "public_preview_url": "https://drive.google.com/file/d/1N7APxFtBZsxg-Fl_xbA1VPtK_Dp-WHDb/preview",
-      "checked_on": "2026-11-14"
+      "checked_on": "2026-11-14",
+      "subject_id": "quran",
+      "subject_classification_basis": "catalog_identifier_and_title",
+      "subject_assignment_officially_verified": false,
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
+      "branch_assignment_officially_verified": false
     }
   ]
 }
