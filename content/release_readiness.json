@@ -135,18 +135,18 @@
   "courses": {},
   "acceptance_checks": {
     "student_journey": {
-      "state": "pending",
-      "evidence": null,
+      "state": "in_progress",
+      "evidence": "Local classroom server tests and Flutter client tests; public hosting, Android device verification, recovery and independent security review remain incomplete. See docs/CLASSROOM_SERVICE.md.",
       "verified_on": null
     },
     "teacher_journey": {
-      "state": "pending",
-      "evidence": null,
+      "state": "in_progress",
+      "evidence": "Local classroom server tests and Flutter client tests; public hosting, Android device verification, recovery and independent security review remain incomplete. See docs/CLASSROOM_SERVICE.md.",
       "verified_on": null
     },
     "teacher_student_link": {
-      "state": "pending",
-      "evidence": null,
+      "state": "in_progress",
+      "evidence": "Local classroom server tests and Flutter client tests; public hosting, Android device verification, recovery and independent security review remain incomplete. See docs/CLASSROOM_SERVICE.md.",
       "verified_on": null
     },
     "offline_curriculum": {
@@ -155,8 +155,8 @@
       "verified_on": null
     },
     "progress_sync": {
-      "state": "pending",
-      "evidence": null,
+      "state": "in_progress",
+      "evidence": "Local classroom server tests and Flutter client tests; public hosting, Android device verification, recovery and independent security review remain incomplete. See docs/CLASSROOM_SERVICE.md.",
       "verified_on": null
     },
     "grounded_ai": {
@@ -170,8 +170,8 @@
       "verified_on": null
     },
     "privacy": {
-      "state": "pending",
-      "evidence": null,
+      "state": "in_progress",
+      "evidence": "Local classroom server tests and Flutter client tests; public hosting, Android device verification, recovery and independent security review remain incomplete. See docs/CLASSROOM_SERVICE.md.",
       "verified_on": null
     },
     "android_device_tests": {
