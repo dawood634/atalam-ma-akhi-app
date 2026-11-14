@@ -5,12 +5,14 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_tts/flutter_tts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'curriculum.dart';
+import 'platform.dart';
 export 'curriculum.dart';
 
 void main() => runApp(const LearningApp());
 
 class LearningApp extends StatelessWidget {
-  const LearningApp({super.key});
+  final bool foundationOnly;
+  const LearningApp({super.key, this.foundationOnly = false});
   @override
   Widget build(BuildContext context) => MaterialApp(
     debugShowCheckedModeBanner: false, title: 'أتعلم مع أخي',
@@ -20,7 +22,7 @@ class LearningApp extends StatelessWidget {
     locale: const Locale('ar'), supportedLocales: const [Locale('ar')],
     localizationsDelegates: GlobalMaterialLocalizations.delegates,
     builder: (context, child) => Directionality(textDirection: TextDirection.rtl, child: child!),
-    home: const HomePage());
+    home: foundationOnly ? const HomePage() : CurriculumPortal(foundationBuilder: (_) => const HomePage()));
 }
 
 class ProgressStore extends ChangeNotifier {
