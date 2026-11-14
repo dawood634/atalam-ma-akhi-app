@@ -63,10 +63,12 @@ void main() {
     for (var i=0;i<3;i++) {
       final choice = find.text(i==0 ? 'خطأ $i' : 'صحيح $i');
       await tester.scrollUntilVisible(choice, 200, scrollable: scroller);
+      await tester.ensureVisible(choice); await tester.pumpAndSettle();
       await tester.tap(choice); await tester.pumpAndSettle();
       expect(tester.widget<OutlinedButton>(find.widgetWithText(OutlinedButton, 'صحيح $i')).onPressed, isNull);
       final next = find.text(i==2 ? 'حفظ النتيجة' : 'التالي');
-      await tester.scrollUntilVisible(next, 150, scrollable: scroller); await tester.tap(next); await tester.pumpAndSettle();
+      await tester.scrollUntilVisible(next, 150, scrollable: scroller);
+      await tester.ensureVisible(next); await tester.pumpAndSettle(); await tester.tap(next); await tester.pumpAndSettle();
     }
     expect(progress.records['test-lesson']['last'],2);
     expect(progress.records['test-lesson']['attempts'],1);
