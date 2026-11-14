@@ -1,7 +1,7 @@
 name: atalam_ma_akhi
 description: Arabic interactive learning prototype for Yemeni primary students
 publish_to: none
-version: 0.2.0+2
+version: 0.3.0+3
 environment:
   sdk: '>=3.3.0 <4.0.0'
 dependencies:
@@ -16,3 +16,5 @@ dev_dependencies:
     sdk: flutter
 flutter:
   uses-material-design: true
+  assets:
+    - content/source_ledger.json
