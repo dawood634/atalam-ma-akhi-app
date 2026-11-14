@@ -23,6 +23,14 @@ void main() {
   testWidgets('Curriculum selection persists separately from foundation progress', (tester) async {
     SharedPreferences.setMockInitialValues({'completed_lessons': ['0']});
     await tester.pumpWidget(const LearningApp());
+    // Large UTF-8 assets are decoded in a real isolate; allow that I/O to finish
+    // outside the widget test's fake clock before settling animated loading UI.
+    await tester.runAsync(() async {
+      for (var i = 0; i < 100 && find.byType(CircularProgressIndicator).evaluate().isNotEmpty; i++) {
+        await Future<void>.delayed(const Duration(milliseconds: 50));
+        await tester.pump();
+      }
+    });
     await tester.pumpAndSettle();
     await tester.scrollUntilVisible(find.text('عدن'), 250);
     await tester.tap(find.text('عدن'));
