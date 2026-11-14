@@ -84,7 +84,7 @@ class _UnitWorkspaceState extends State<UnitWorkspace> {
         const Text('إنجاز الاختبار لا يعني إتقانه؛ راجع آخر نتيجة وأفضل نتيجة.'),
       ]))),
       if (teacher) ...[
-        const Text('هذه لوحة محلية على الجهاز نفسه. لا يوجد حساب معلم أو رمز غرفة أو متابعة عن بُعد، وزر تبديل الواجهة ليس قفل صلاحيات.', style: TextStyle(fontSize: 13, height: 1.6)),
+        const Text('هذه لوحة محلية للجهاز نفسه. للمتابعة بين جهازين استخدم الغرف المتصلة من الصفحة الرئيسية عند تفعيل الخدمة. تبديل هذه الواجهة ليس قفل صلاحيات.', style: TextStyle(fontSize: 13, height: 1.6)),
         const SizedBox(height: 10), OutlinedButton.icon(icon: const Icon(Icons.copy), label: const Text('نسخ تقرير النتائج'), onPressed: () async {
           await Clipboard.setData(ClipboardData(text: report()));
           if (context.mounted) ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('نُسخ التقرير، ويمكنك لصقه في رسالة أو ملف.')));
