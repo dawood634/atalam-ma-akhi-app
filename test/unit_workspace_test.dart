@@ -64,7 +64,8 @@ void main() {
   });
   testWidgets('Lesson grades only the first answer and persists a complete attempt', (tester) async {
     SharedPreferences.setMockInitialValues({});
-    final progress = UnitProgress(await SharedPreferences.getInstance());
+    List<int>? submitted;
+    final progress = UnitProgress(await SharedPreferences.getInstance(), onAttempt: (id, answers) async { submitted = answers; return true; });
     final lesson = {'id':'test-lesson', 'title':'درس اختبار', 'objective':'هدف', 'hook':'موقف', 'explanation':'شرح', 'example':'مثال', 'pitfall':'تنبيه', 'printed_page':9,
       'questions': List.generate(3, (i) => {'prompt':'سؤال $i', 'choices':['صحيح $i','خطأ $i'], 'correct':0, 'feedback':'تفسير $i'})};
     await tester.pumpWidget(MaterialApp(home: UnitLessonPage(lesson: lesson, progress: progress)));
@@ -81,6 +82,8 @@ void main() {
     }
     expect(progress.records['test-lesson']['last'],2);
     expect(progress.records['test-lesson']['attempts'],1);
+    expect(submitted,[1,0,0]);
+    expect(find.text('النتيجة جاهزة للإرسال إلى المعلم. افتح الغرفة لمزامنتها.'), findsOneWidget);
     expect(find.textContaining('نتيجتك 2 من 3'), findsOneWidget);
   });
   testWidgets('Interactive lab distinguishes intersection from union', (tester) async {
