@@ -47,7 +47,7 @@ void main() {
   });
   testWidgets('Student and teacher open separate pages', (tester) async {
     SharedPreferences.setMockInitialValues({});
-    await tester.pumpWidget(const LearningApp());
+    await tester.pumpWidget(const LearningApp(foundationOnly: true));
     await tester.pumpAndSettle();
     await tester.ensureVisible(find.text('ادخل كطالب'));
     await tester.tap(find.text('ادخل كطالب'));
@@ -59,7 +59,7 @@ void main() {
     SharedPreferences.setMockInitialValues({
       'completed_lessons': ['9', '9', '-1', '900', 'invalid']
     });
-    await tester.pumpWidget(const LearningApp());
+    await tester.pumpWidget(const LearningApp(foundationOnly: true));
     await tester.pumpAndSettle();
     expect(find.text('1 من ${lessons.length} دروس'), findsOneWidget);
   });
