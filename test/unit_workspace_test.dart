@@ -22,6 +22,15 @@ void main() {
         expect(q['correct'], inInclusiveRange(0, (q['choices'] as List).length - 1));
         expect(q['feedback'], isNotEmpty);
         expect((q['choices'] as List).toSet().length, (q['choices'] as List).length);
+        // Repeated elements do not make a different set: {4,4} equals {4}.
+        String canonicalChoice(String choice) {
+          if (choice == '∅') return '{}';
+          if (!choice.startsWith('{') || !choice.endsWith('}') || choice.contains('(')) return choice;
+          final elements = choice.substring(1, choice.length - 1).split('،').map((e) => e.trim()).where((e) => e.isNotEmpty).toSet().toList()..sort();
+          return '{${elements.join(',')}}';
+        }
+        expect((q['choices'] as List).cast<String>().map(canonicalChoice).toSet().length, (q['choices'] as List).length,
+          reason: 'Choices must not include mathematically equivalent simple sets');
       }
     }
   });
