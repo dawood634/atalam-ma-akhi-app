@@ -1,37 +1,25 @@
-# أتعلم مع أخي — نسخة Flutter تجريبية
+# أتعلم مع أخي — نسخة 0.2.0
 
-تطبيق عربي تعليمي أصلي باستخدام Flutter. يتضمن 10 دروس تأسيسية تجريبية، صوتًا عربيًا باستخدام محرك تحويل النص إلى كلام في الجهاز، تمارين تفاعلية، حفظ تقدم محلي، وشاشتي طالب ومعلم منفصلتين.
+تطبيق Flutter عربي للأطفال، بواجهتي طالب ومعلم منفصلتين ودون حسابات.
 
-**مهم:** اختيار صنعاء أو عدن والصفوف 1–6 متاح في الواجهة فقط. لم تُدرج بعد الكتب المدرسية المعتمدة أو الدروس الخاصة بكل منهج وصف. لا يوجد ربط بين أجهزة المعلم والطالب في هذه النسخة.
+- ٢٠٠ كلمة مشكولة في ٢٠ مجموعة، كل مجموعة ١٠ كلمات.
+- ١٢٨ درسًا ونشاطًا: البداية، الحروف، القراءة، تركيب الكلمات، الإملاء والحساب.
+- إملاء بكتابة الإجابة؛ يقبل ترك التشكيل ويحافظ على اختلاف الهمزات والحروف.
+- تركيب كلمات بأزرار الحروف، ونطق عربي بمحرك الجهاز.
+- حفظ الدروس المكتملة وعدّ المحاولات والأخطاء محليًا.
+- اسم الطالب، هدف يومي، تقرير قابل للنسخ ومقترحات للمراجعة.
 
-## التشغيل
+الدروس تأسيسية من إعداد التطبيق، وليست مطابقة لكتاب أو منهج رسمي.
+القراءة تقييم ذاتي بمساعدة المعلم؛ لا يوجد تسجيل أو تقييم آلي للنطق.
+تقارير المعلم على الجهاز نفسه، ولا توجد مزامنة بين أجهزة مختلفة.
+الدروس العشرة الأصلية تحتفظ بأرقامها لحماية سجل التقدم السابق عند ترقية متوافقة.
 
-1. ثبّت Flutter SDK على جهاز تطوير.
-2. نفّذ `flutter create . --platforms=android,ios --project-name atalam_ma_akhi` لإنشاء ملفات Android وiOS الأصلية.
-3. نفّذ `flutter pub get` ثم `flutter run`.
-4. لإنشاء APK: `flutter build apk --release`.
+## البناء
 
-## GitHub Actions
+تعمل GitHub Actions على توليد مجلد Android دون استبدال شيفرة التطبيق،
+وتشغيل التحليل والاختبارات ثم بناء APK ونشر إصدار تجريبي قابل للتنزيل.
+Flutter 3.35.7 / Java 17. التوقيع الحالي تجريبي ولا يصلح للنشر في المتجر.
+تغيير توقيع APK بين بيئات البناء قد يمنع الترقية فوق إصدار سابق؛ لا تحذف بيانات الطفل دون نسخها.
 
-ارفع **محتويات المجلد** إلى مستودع GitHub بفرع `main`، ثم افتح Actions → Build Android APK → Run workflow. بعد نجاح البناء ستجد APK في Artifacts. يتطلب بناء iPhone إعداد macOS وتوقيع Apple Developer؛ لم يُنجز ذلك بعد.
-
-## ملاحظات
-
-- الصوت يعتمد على توافر صوت عربي في الجهاز، وقد تختلف جودته بين الأجهزة.
-- حفظ التقدم محليًا على نفس الجهاز.
-- هذه نسخة أولية غير مختبرة على أجهزة فعلية.
-
-## Validation and trial delivery
-The Android workflow generates native Android files in a temporary project,
-keeps the supplied Dart sources intact, runs static analysis and widget tests,
-builds a release APK and publishes it as a downloadable GitHub prerelease.
-The APK uses Flutter's default development signing; it is for testing only.
-Completed lesson IDs are stored individually, with duplicates and invalid IDs
-ignored. Existing legacy progress cannot be safely reconstructed and is reset.
-Arabic Material localization and Android TTS discovery are configured.
-
-Status: source review completed; Flutter analysis, tests and APK build must
-succeed in GitHub Actions before a binary can be considered verified.
-The ten sample lessons are shared across the displayed curriculum and grade
-choices. These choices do not provide distinct curricula. Teacher reports are
-local to this device; there is no remote classroom service or authentication.
+للتطوير: `flutter create . --platforms=android --org=com.dawood --project-name atalam_ma_akhi`،
+ثم `flutter pub get` و`flutter test` و`flutter build apk --release`.
