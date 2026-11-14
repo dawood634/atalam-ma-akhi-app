@@ -1,6 +1,11 @@
 name: Build Android APK
 on:
   workflow_dispatch:
+    inputs:
+      publish_final:
+        description: 'Publish only after all final-release checks pass'
+        type: boolean
+        default: false
   push:
     branches: [main]
 permissions:
@@ -14,6 +19,14 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+      - name: Audit curriculum coverage and final-release readiness
+        run: |
+          python3 tools/catalog_audit.py
+          python3 tools/release_gate.py
+          python3 -m unittest discover -s tools -p 'test_*.py'
+      - name: Enforce final-release gate
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_final }}
+        run: python3 tools/release_gate.py --require-ready
       - name: Reuse trial signing key across builds
         uses: actions/cache@v4
         with:
@@ -58,9 +71,10 @@ jobs:
           name: atalam-ma-akhi-android-apk
           path: build/app/outputs/flutter-apk/app-release.apk
           if-no-files-found: error
-      - name: Publish downloadable trial APK
-        env:
-          GH_TOKEN: ${{ github.token }}
+      # Builds remain downloadable as CI artifacts for internal QA.
+      # Public trial releases are intentionally disabled: one final delivery was requested.
+      - name: Require provisioned production signing before final publication
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_final }}
         run: |
-          cp build/app/outputs/flutter-apk/app-release.apk atalam-ma-akhi-trial.apk
-          gh release create "trial-${GITHUB_RUN_NUMBER}" atalam-ma-akhi-trial.apk --prerelease --title "Android trial ${GITHUB_RUN_NUMBER}" --notes "Independent curriculum preview, version 0.4.0: Sanaa/Aden curriculum portal, six grade selectors, candidate source inventory and a ten-lesson original draft unit with 30 explained questions, offline search, bookmarks, progress and local teacher assignments. Full official curriculum alignment is not yet complete. Previous 200-word foundation section is retained. Teacher reports and progress are local to the device; cross-device synchronization is not included. Development-signed trial APK."
+          echo "Final publication is blocked until a production signing and distribution workflow is provisioned and verified."
+          exit 1
