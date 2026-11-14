@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'unit_workspace.dart';
+import 'classroom_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -61,6 +62,9 @@ class _CurriculumPortalState extends State<CurriculumPortal> {
             selected: {branch}, onSelectionChanged: (v) { setState(() => branch = v.first); save(); }),
           const SizedBox(height: 8), const Text('نسبة كل كتاب إلى العلمي أو الأدبي ما زالت قيد التحقق؛ الفهرس أدناه غير مصنّف حسب الفرع بعد.', style: TextStyle(fontSize: 13)),
         ],
+        const SizedBox(height: 22), OutlinedButton.icon(icon: const Icon(Icons.groups_outlined),
+          label: const Text('غرف الطالب والمعلم'),
+          onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const ClassroomPage()))),
         const SizedBox(height: 22), FilledButton.icon(icon: const Icon(Icons.school),
           label: const Text('مساحة التعلم • وحدة المجموعات للسابع'),
           onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => const UnitWorkspace()))),
