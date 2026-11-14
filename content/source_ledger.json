@@ -2257,8 +2257,8 @@
       "subject_id": "chemistry",
       "subject_classification_basis": "catalog_identifier_and_title",
       "subject_assignment_officially_verified": false,
-      "branch_hint": "science",
-      "branch_hint_basis": "explicit_listing_title",
+      "branch_hint": "unspecified",
+      "branch_hint_basis": "not_stated",
       "branch_assignment_officially_verified": false
     },
     {
