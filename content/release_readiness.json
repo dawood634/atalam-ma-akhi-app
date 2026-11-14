@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "delivery_policy": "single_final_delivery_no_automatic_preview_releases",
+  "scope_note": "Sanaa and Aden; grades 7-12; scientific and literary branches for 11-12. Candidate books do not define verified required subjects.",
+  "curriculum_matrix": [
+    {
+      "track": "aden",
+      "grade": 7,
+      "branch": "general",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "aden",
+      "grade": 8,
+      "branch": "general",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "aden",
+      "grade": 9,
+      "branch": "general",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "aden",
+      "grade": 10,
+      "branch": "general",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "aden",
+      "grade": 11,
+      "branch": "literary",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "aden",
+      "grade": 11,
+      "branch": "science",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "aden",
+      "grade": 12,
+      "branch": "literary",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "aden",
+      "grade": 12,
+      "branch": "science",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "sanaa",
+      "grade": 7,
+      "branch": "general",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "sanaa",
+      "grade": 8,
+      "branch": "general",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "sanaa",
+      "grade": 9,
+      "branch": "general",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "sanaa",
+      "grade": 10,
+      "branch": "general",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "sanaa",
+      "grade": 11,
+      "branch": "literary",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "sanaa",
+      "grade": 11,
+      "branch": "science",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "sanaa",
+      "grade": 12,
+      "branch": "literary",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    },
+    {
+      "track": "sanaa",
+      "grade": 12,
+      "branch": "science",
+      "official_requirements_verified": false,
+      "official_requirements_reference": null,
+      "required_courses": []
+    }
+  ],
+  "courses": {},
+  "acceptance_checks": {
+    "student_journey": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    },
+    "teacher_journey": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    },
+    "teacher_student_link": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    },
+    "offline_curriculum": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    },
+    "progress_sync": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    },
+    "grounded_ai": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    },
+    "accessibility": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    },
+    "privacy": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    },
+    "android_device_tests": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    },
+    "production_signing": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    },
+    "content_rights": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    },
+    "independent_curriculum_review": {
+      "state": "pending",
+      "evidence": null,
+      "verified_on": null
+    }
+  }
+}
