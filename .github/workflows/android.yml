@@ -24,6 +24,13 @@ jobs:
           python3 tools/catalog_audit.py
           python3 tools/release_gate.py
           python3 -m unittest discover -s tools -p 'test_*.py'
+          python3 -m unittest server.test_app -v
+      - name: Verify classroom deployment entry point
+        run: |
+          python3 -m pip install -r server/requirements.txt
+          python3 -m gunicorn --check-config 'server.app:create_app()'
+        env:
+          CLASSROOM_DATA_DIR: /tmp/atalam-classroom-check
       - name: Enforce final-release gate
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_final }}
         run: python3 tools/release_gate.py --require-ready
@@ -56,6 +63,8 @@ jobs:
           p = Path('android/app/src/main/AndroidManifest.xml')
           s = p.read_text().replace('android:label="atalam_ma_akhi"', 'android:label="أتعلم مع أخي - تجربة المناهج"')
           s = s.replace('<application', '<queries><intent><action android:name="android.intent.action.TTS_SERVICE" /></intent></queries>\n    <application', 1)
+          s = s.replace('    <application', '    <uses-permission android:name="android.permission.INTERNET" />\n    <application', 1)
+          s = s.replace('<application', '<application android:allowBackup="false"', 1)
           p.write_text(s)
           p = Path('android/app/build.gradle.kts')
           s = p.read_text()
@@ -65,7 +74,9 @@ jobs:
       - run: flutter pub get
       - run: flutter analyze --no-fatal-infos
       - run: flutter test
-      - run: flutter build apk --release
+      - run: flutter build apk --release --dart-define=CLASSROOM_API_URL="${CLASSROOM_API_URL}"
+        env:
+          CLASSROOM_API_URL: ${{ vars.CLASSROOM_API_URL }}
       - uses: actions/upload-artifact@v4
         with:
           name: atalam-ma-akhi-android-apk
