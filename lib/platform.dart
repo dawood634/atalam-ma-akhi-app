@@ -87,7 +87,7 @@ class _CurriculumPortalState extends State<CurriculumPortal> {
         ])),
         const SizedBox(height: 24), OutlinedButton.icon(icon: const Icon(Icons.child_care), label: const Text('قسم التأسيس السابق • ٢٠٠ كلمة'),
           onPressed: () => Navigator.push(context, MaterialPageRoute(builder: widget.foundationBuilder))),
-        const SizedBox(height: 20), const Text('أتعلم مع أخي مشروع تعليمي مستقل، وليس تطبيقًا رسميًا تابعًا لوزارة التربية. لا يرفع بيانات الطالب إلى الإنترنت.', textAlign: TextAlign.center, style: TextStyle(fontSize: 12, color: Colors.black54)),
+        const SizedBox(height: 20), const Text('أتعلم مع أخي مشروع تعليمي مستقل. يبقى التقدم محليًا؛ وعند تفعيل الغرف وربط الطالب، تُرسل إجابات اختباراته ونتائجها واسمه المستعار إلى خادم المنصة.', textAlign: TextAlign.center, style: TextStyle(fontSize: 12, color: Colors.black54)),
         const SizedBox(height: 20),
       ]));
   }
