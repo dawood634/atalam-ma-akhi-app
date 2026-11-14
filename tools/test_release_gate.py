@@ -28,6 +28,10 @@ class CatalogTests(unittest.TestCase):
             item = classify({'id': slug, 'title': title})
             self.assertEqual(item['subject_id'], expected)
             self.assertFalse(item['branch_assignment_officially_verified'])
+        activity = classify({'id':'chemistry-activities-grade-11', 'title':'الأنشطة والتجارب العلمية في الكيمياء'})
+        self.assertEqual(activity['branch_hint'], 'unspecified')
+        science = classify({'id':'math-grade-12', 'title':'الرياضيات - علمي'})
+        self.assertEqual(science['branch_hint'], 'science')
 
     def test_missing_aden_sources_are_reported_as_gaps(self):
         data = json.loads((ROOT / 'content/source_ledger.json').read_text())
