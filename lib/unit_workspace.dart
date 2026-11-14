@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'classroom_client.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -9,7 +10,8 @@ String normalizeArabic(String text) => text.toLowerCase()
 
 class UnitProgress {
   final SharedPreferences prefs;
-  UnitProgress(this.prefs);
+  final Future<bool> Function(String, List<int>)? onAttempt;
+  UnitProgress(this.prefs, {this.onAttempt});
   Map<String, dynamic> get records {
     try { return Map<String, dynamic>.from(jsonDecode(prefs.getString('unit_progress_v1') ?? '{}') as Map); }
     catch (_) { return {}; }
@@ -47,7 +49,7 @@ class _UnitWorkspaceState extends State<UnitWorkspace> {
     try {
       final data = jsonDecode(await rootBundle.loadString('content/sets_unit.json')) as Map<String,dynamic>;
       final prefs = await SharedPreferences.getInstance();
-      if (mounted) setState(() { unit = data; progress = UnitProgress(prefs); failed = false; });
+      if (mounted) setState(() { unit = data; progress = UnitProgress(prefs, onAttempt: ClassroomConnection.queueAnswers); failed = false; });
     } catch (_) { if (mounted) setState(() => failed = true); }
   }
   List<Map<String,dynamic>> get lessons => (unit!['lessons'] as List).map((e) => Map<String,dynamic>.from(e as Map)).toList();
@@ -115,12 +117,15 @@ class UnitLessonPage extends StatefulWidget {
 }
 class _UnitLessonPageState extends State<UnitLessonPage> {
   int index = 0; int? chosen; int score = 0; bool finished = false; bool saving = false; String? error;
+  final answers = <int>[]; bool queued = false; String? queueError;
   List get questions => widget.lesson['questions'] as List;
   Future<void> next() async {
     if (index < questions.length - 1) { setState(() { index++; chosen = null; }); return; }
     setState(() { saving = true; error = null; });
     try {
       await widget.progress.record(widget.lesson['id'] as String, score, questions.length);
+      try { queued = await widget.progress.onAttempt?.call(widget.lesson['id'] as String, List<int>.from(answers)) ?? false; }
+      catch (_) { queueError = 'حُفظت النتيجة محليًا، لكن تعذرت إضافتها إلى المزامنة.'; }
       if (mounted) setState(() { finished = true; saving = false; });
     } catch (_) { if (mounted) setState(() { saving = false; error = 'تعذر حفظ النتيجة. أعد المحاولة.'; }); }
   }
@@ -141,7 +146,7 @@ class _UnitLessonPageState extends State<UnitLessonPage> {
         Text(q['prompt'] as String, style: const TextStyle(fontSize: 22, height: 1.7)),
         for (var i = 0; i < (q['choices'] as List).length; i++) Padding(padding: const EdgeInsets.only(top: 10), child: OutlinedButton(
           style: OutlinedButton.styleFrom(padding: const EdgeInsets.all(16), backgroundColor: chosen == i ? (chosen == q['correct'] ? Colors.green.shade100 : Colors.orange.shade100) : null),
-          onPressed: chosen != null ? null : () => setState(() { chosen = i; if (i == q['correct']) score++; }),
+          onPressed: chosen != null ? null : () => setState(() { chosen = i; answers.add(i); if (i == q['correct']) score++; }),
           child: Text(q['choices'][i] as String, style: const TextStyle(fontSize: 20)))),
         if (chosen != null) ...[
           const SizedBox(height: 14), Text('${chosen == q['correct'] ? 'إجابة صحيحة' : 'لنراجع السبب'}\n${q['feedback']}\nالإجابة: ${q['choices'][q['correct']]}', style: const TextStyle(height: 1.8)),
@@ -150,8 +155,10 @@ class _UnitLessonPageState extends State<UnitLessonPage> {
         ],
       ] else ...[
         Card(child: Padding(padding: const EdgeInsets.all(20), child: Text('نتيجتك $score من ${questions.length}\nحُفظت على هذا الجهاز. راجع الشرح ثم أعد التدريب.', style: const TextStyle(fontSize: 22, height: 1.8)))),
+        if (queued) const Text('النتيجة جاهزة للإرسال إلى المعلم. افتح الغرفة لمزامنتها.'),
+        if (queueError != null) Text(queueError!),
         for (final item in questions) ListTile(title: Text(item['prompt'] as String), subtitle: Text('الإجابة: ${item['choices'][item['correct']]}\n${item['feedback']}')),
-        OutlinedButton(onPressed: () => setState(() { index = 0; chosen = null; score = 0; finished = false; }), child: const Text('إعادة الاختبار')),
+        OutlinedButton(onPressed: () => setState(() { index = 0; chosen = null; score = 0; finished = false; answers.clear(); queued = false; queueError = null; }), child: const Text('إعادة الاختبار')),
       ],
       const SizedBox(height: 26), Text('مرجع موضوع الدرس: الصفحة المطبوعة ${l['printed_page']} في عينة رياضيات السابع القديمة. الشرح والتدريب من إعداد التطبيق؛ المطابقة الحالية والمراجعة المستقلة غير معتمدتين.', style: const TextStyle(fontSize: 13, height: 1.6)),
     ]));
