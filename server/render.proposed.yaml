@@ -1,20 +1,18 @@
-# Proposal only. Do not apply or create paid resources before owner approval.
-# Base compute and 1 GB disk: USD 7.25/month at reviewed pricing, excluding taxes and usage overages.
+# Free-only proposal. No persistent Render disk and no paid compute plan.
+# Requires a separately provisioned free Neon PostgreSQL database.
 services:
   - type: web
     name: atalam-ma-akhi-classroom-api
     runtime: python
-    plan: 0.5c-512mb
+    plan: free
     buildCommand: pip install -r server/requirements.txt
     startCommand: gunicorn 'server.app:create_app()' --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 30 --access-logfile -
     healthCheckPath: /health
     autoDeployTrigger: off
-    disk:
-      name: atalam-classroom-data
-      mountPath: /var/data
-      sizeGB: 1
     envVars:
-      - key: CLASSROOM_DATA_DIR
-        value: /var/data
+      - key: REQUIRE_EXTERNAL_DATABASE
+        value: "1"
+      - key: DATABASE_URL
+        sync: false
       - key: TEACHER_INVITE
         sync: false
