@@ -17,6 +17,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: atalam_test
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: synthetic-ci-password
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
     steps:
       - uses: actions/checkout@v4
       - name: Audit curriculum coverage and final-release readiness
@@ -28,9 +42,12 @@ jobs:
       - name: Verify classroom deployment entry point
         run: |
           python3 -m pip install -r server/requirements.txt
+          python3 -m unittest server.test_app -v
           python3 -m gunicorn --check-config 'server.app:create_app()'
         env:
           CLASSROOM_DATA_DIR: /tmp/atalam-classroom-check
+          CLASSROOM_TEST_DATABASE_URL: postgresql://postgres:synthetic-ci-password@127.0.0.1:5432/atalam_test?sslmode=disable
+          CLASSROOM_ALLOW_LOCAL_DATABASE: '1' 
       - name: Enforce final-release gate
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_final }}
         run: python3 tools/release_gate.py --require-ready
