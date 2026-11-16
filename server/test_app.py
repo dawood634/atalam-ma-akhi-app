@@ -1,4 +1,7 @@
 import io
+import os
+from urllib.parse import urlparse
+from server.database import DatabaseSession
 import concurrent.futures
 import json
 from pathlib import Path
@@ -6,10 +9,11 @@ import sqlite3
 import tempfile
 import threading
 import unittest
+from unittest import mock
 from urllib.error import HTTPError
 from urllib.request import Request,urlopen
 from wsgiref.simple_server import make_server, WSGIRequestHandler
-from server.app import ClassroomApp, MAX_BODY
+from server.app import ClassroomApp, MAX_BODY, create_app
 
 INVITE='test-only-creation-invitation-'+'x'*32
 
@@ -52,10 +56,10 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(self.call('/v1/rooms','POST',{'title':'room'})[0],403)
         self.assertEqual(self.call('/v1/rooms','POST',{'title':'room'},invite='دعوة غير صحيحة')[0],403)
         room=self.room();pupil=self.pupil(room)
-        with sqlite3.connect(self.path) as db:
-            saved=db.execute('SELECT teacher_hash FROM rooms').fetchone()[0]
+        with self.app.connect() as db:
+            saved=db.execute('SELECT teacher_hash FROM rooms').fetchone()['teacher_hash']
             self.assertNotEqual(saved,room['token'])
-            self.assertNotEqual(db.execute('SELECT token_hash FROM students').fetchone()[0],pupil['token'])
+            self.assertNotEqual(db.execute('SELECT token_hash FROM students').fetchone()['token_hash'],pupil['token'])
         unconfigured=ClassroomApp(Path(self.temp.name)/'no-invite.sqlite3')
         previous=self.app;self.app=unconfigured
         self.assertEqual(self.call('/v1/rooms','POST',{'title':'room'})[0],503)
@@ -120,7 +124,7 @@ class ApiTests(unittest.TestCase):
         self.call('/v1/attempts','POST',self.payload(),token=pa['token'])
         self.assertEqual(self.call('/v1/session','DELETE',token=pa['token'])[0],200)
         self.assertEqual(self.call('/v1/session',token=pa['token'])[0],401)
-        with sqlite3.connect(self.path) as db:self.assertEqual(db.execute('SELECT COUNT(*) FROM attempts').fetchone()[0],0)
+        with self.app.connect() as db:self.assertEqual(db.execute('SELECT COUNT(*) AS n FROM attempts').fetchone()['n'],0)
         self.assertEqual(self.call('/v1/session','DELETE',token=a['token'])[0],200)
         self.assertEqual(self.call('/v1/session',token=a['token'])[0],401)
         self.assertEqual(self.call('/v1/session',token=pb['token'])[0],200)
@@ -130,9 +134,9 @@ class ApiTests(unittest.TestCase):
         self.call('/v1/attempts','POST',self.payload(),token=student['token'])
         self.now+=31*86400
         self.assertEqual(self.call('/v1/session',token=student['token'])[0],401)
-        with sqlite3.connect(self.path) as db:
+        with self.app.connect() as db:
             for table in ['rooms','students','attempts']:
-                self.assertEqual(db.execute('SELECT COUNT(*) FROM '+table).fetchone()[0],0)
+                self.assertEqual(db.execute('SELECT COUNT(*) AS n FROM '+table).fetchone()['n'],0)
 
     def test_bad_input_and_unknown_lessons_are_rejected(self):
         room=self.room();student=self.pupil(room)
@@ -145,11 +149,11 @@ class ApiTests(unittest.TestCase):
         self.assertNotIn('feedback',public['questions'][0])
 
     def test_rate_limit_is_shared_by_new_service_instances(self):
-        for _ in range(120):self.assertEqual(self.call('/health',address='limited')[0],200)
+        for _ in range(120):self.assertEqual(self.call('/v1/session',address='limited')[0],401)
         self.app=ClassroomApp(self.path,INVITE,lambda:self.now)
-        self.assertEqual(self.call('/health',address='limited')[0],429)
+        self.assertEqual(self.call('/v1/session',address='limited')[0],429)
         self.now+=61
-        self.assertEqual(self.call('/health',address='limited')[0],200)
+        self.assertEqual(self.call('/v1/session',address='limited')[0],401)
 
     def test_concurrent_retries_create_one_attempt(self):
         room=self.room();student=self.pupil(room);payload=self.payload()
@@ -197,6 +201,42 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(result['score'],3)
         roster=request('/v1/report',token=room['token'])
         self.assertEqual(len(roster['students']),1)
+
+
+class DatabaseConfigurationTests(unittest.TestCase):
+    def test_external_storage_requirement_cannot_fall_back_to_ephemeral_sqlite(self):
+        with mock.patch.dict(os.environ, {'REQUIRE_EXTERNAL_DATABASE':'1','DATABASE_URL':''}):
+            with self.assertRaisesRegex(RuntimeError,'External database is required'):
+                create_app()
+
+    def test_unknown_database_urls_are_rejected(self):
+        with mock.patch.dict(os.environ, {'DATABASE_URL':'mysql://not-an-accepted-database'}):
+            with self.assertRaisesRegex(RuntimeError,'PostgreSQL'):
+                create_app()
+
+    def test_public_database_tls_cannot_be_disabled_even_with_local_test_flag(self):
+        import server.database as module
+        fake = mock.Mock()
+        with mock.patch.object(module,'psycopg',fake):
+            with mock.patch.dict(os.environ, {'CLASSROOM_ALLOW_LOCAL_DATABASE':'1'}):
+                with self.assertRaisesRegex(RuntimeError,'TLS-protected'):
+                    with DatabaseSession('postgresql://u:p@database.example/db?sslmode=disable'):
+                        pass
+        fake.connect.assert_not_called()
+
+
+@unittest.skipUnless(os.environ.get('CLASSROOM_TEST_DATABASE_URL'), 'PostgreSQL integration database not configured')
+class PostgresApiTests(ApiTests):
+    def setUp(self):
+        super().setUp()
+        target = os.environ['CLASSROOM_TEST_DATABASE_URL']
+        parsed = urlparse(target)
+        if parsed.hostname not in ('127.0.0.1','localhost') or parsed.path != '/atalam_test':
+            raise RuntimeError('Destructive integration setup is allowed only on the dedicated local atalam_test database')
+        with DatabaseSession(target) as db:
+            db.execute('DROP TABLE IF EXISTS attempts,students,rooms,rate_windows CASCADE')
+        self.path = target
+        self.app = ClassroomApp(target,INVITE,lambda:self.now)
 
 
 if __name__=='__main__':unittest.main()
