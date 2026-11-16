@@ -6,7 +6,7 @@ import os
 from pathlib import Path
 import re
 import secrets
-import sqlite3
+from server.database import DatabaseSession, INTEGRITY_ERRORS, DATABASE_ERRORS
 import time
 from http import HTTPStatus
 
@@ -43,7 +43,7 @@ class ClassroomApp:
             PRAGMA journal_mode=WAL;
             CREATE TABLE IF NOT EXISTS rooms(
                 id TEXT PRIMARY KEY, title TEXT NOT NULL, code TEXT NOT NULL UNIQUE,
-                teacher_hash TEXT NOT NULL UNIQUE, expires REAL NOT NULL,
+                teacher_hash TEXT NOT NULL UNIQUE, expires DOUBLE PRECISION NOT NULL,
                 assignment TEXT);
             CREATE TABLE IF NOT EXISTS students(
                 id TEXT PRIMARY KEY, room_id TEXT NOT NULL REFERENCES rooms(id) ON DELETE CASCADE,
@@ -52,22 +52,20 @@ class ClassroomApp:
             CREATE TABLE IF NOT EXISTS attempts(
                 student_id TEXT NOT NULL REFERENCES students(id) ON DELETE CASCADE,
                 request_id TEXT NOT NULL, lesson_id TEXT NOT NULL, fingerprint TEXT NOT NULL,
-                score INTEGER NOT NULL, total INTEGER NOT NULL, result TEXT NOT NULL, created REAL NOT NULL,
+                score INTEGER NOT NULL, total INTEGER NOT NULL, result TEXT NOT NULL, created DOUBLE PRECISION NOT NULL,
                 PRIMARY KEY(student_id,request_id));
             CREATE TABLE IF NOT EXISTS rate_windows(
-                key TEXT PRIMARY KEY, starts REAL NOT NULL, count INTEGER NOT NULL);
+                key TEXT PRIMARY KEY, starts DOUBLE PRECISION NOT NULL, count INTEGER NOT NULL);
             CREATE INDEX IF NOT EXISTS attempts_student_lesson ON attempts(student_id,lesson_id);
             ''')
         try:
-            os.chmod(self.database, 0o600)
+            if not self.database.startswith(('postgres://', 'postgresql://')):
+                os.chmod(self.database, 0o600)
         except OSError:
             pass
 
     def connect(self):
-        db = sqlite3.connect(self.database, timeout=10)
-        db.row_factory = sqlite3.Row
-        db.execute('PRAGMA foreign_keys=ON')
-        return db
+        return DatabaseSession(self.database)
 
     def rate_limit(self, key, limit=120):
         now = self.clock()
@@ -80,7 +78,7 @@ class ClassroomApp:
                     raise ApiError(429, 'Too many requests; retry later')
                 db.execute('UPDATE rate_windows SET count=count+1 WHERE key=?', (key,))
             else:
-                db.execute('INSERT OR REPLACE INTO rate_windows VALUES(?,?,1)', (key, now))
+                db.execute('INSERT INTO rate_windows(key,starts,count) VALUES(?,?,1) ON CONFLICT(key) DO UPDATE SET starts=excluded.starts,count=excluded.count', (key, now))
 
     def authenticate(self, db, authorization):
         if not authorization.startswith('Bearer ') or len(authorization) > 150:
@@ -107,9 +105,9 @@ class ClassroomApp:
 
     def dispatch(self, method, path, data, headers, address):
         # REMOTE_ADDR must come from a trusted HTTPS reverse proxy/server configuration.
-        self.rate_limit('ip:' + digest(address))
         if method == 'GET' and path == '/health':
             return 200, {'status': 'ok', 'api_version': 1}
+        self.rate_limit('ip:' + digest(address))
         if method == 'POST' and path == '/v1/rooms':
             if len(self.teacher_invite) < 32:
                 raise ApiError(503, 'Teacher provisioning has not been configured')
@@ -136,11 +134,15 @@ class ClassroomApp:
                 room_id = secrets.token_urlsafe(16)
                 for _ in range(10):
                     code = ''.join(secrets.choice(CODE_ALPHABET) for _ in range(8))
+                    db.execute('SAVEPOINT new_room')
                     try:
                         db.execute('INSERT INTO rooms VALUES(?,?,?,?,?,NULL)',
                                    (room_id, title, code, digest(token), now + 30 * 86400))
+                        db.execute('RELEASE SAVEPOINT new_room')
                         break
-                    except sqlite3.IntegrityError:
+                    except INTEGRITY_ERRORS:
+                        db.execute('ROLLBACK TO SAVEPOINT new_room')
+                        db.execute('RELEASE SAVEPOINT new_room')
                         continue
                 else:
                     raise ApiError(503, 'Unable to create a room; retry later')
@@ -152,13 +154,13 @@ class ClassroomApp:
                 room = db.execute('SELECT * FROM rooms WHERE code=? AND expires>?', (code, now)).fetchone()
                 if room is None:
                     raise ApiError(404, 'Room code is invalid or expired')
-                count = db.execute('SELECT COUNT(*) FROM students WHERE room_id=?', (room['id'],)).fetchone()[0]
+                count = db.execute('SELECT COUNT(*) AS total FROM students WHERE room_id=?', (room['id'],)).fetchone()['total']
                 if count >= 50:
                     raise ApiError(409, 'Room capacity reached')
                 token, student_id = secrets.token_urlsafe(32), secrets.token_urlsafe(16)
                 try:
                     db.execute('INSERT INTO students VALUES(?,?,?,?)', (student_id, room['id'], nickname, digest(token)))
-                except sqlite3.IntegrityError:
+                except INTEGRITY_ERRORS:
                     raise ApiError(409, 'Choose another nickname in this room') from None
                 student = db.execute('SELECT * FROM students WHERE id=?', (student_id,)).fetchone()
                 return 201, {**self.room_payload('student', room, student), 'token': token}
@@ -179,7 +181,7 @@ class ClassroomApp:
                 roster = []
                 for pupil in db.execute('SELECT id,nickname FROM students WHERE room_id=? ORDER BY nickname', (room['id'],)):
                     latest = {}
-                    for attempt in db.execute('SELECT lesson_id,score,total,created FROM attempts WHERE student_id=? ORDER BY created,rowid', (pupil['id'],)):
+                    for attempt in db.execute('SELECT lesson_id,score,total,created FROM attempts WHERE student_id=? ORDER BY ' + db.attempt_order, (pupil['id'],)):
                         key = attempt['lesson_id']
                         old = latest.get(key, {'best':0, 'attempts':0})
                         latest[key] = {'last':attempt['score'], 'best':max(old['best'], attempt['score']),
@@ -219,7 +221,7 @@ class ClassroomApp:
                 result = {'request_id':request_id, 'lesson_id':lesson_id, 'score':score, 'total':len(questions),
                           'feedback':[{'correct':q['correct'],'explanation':q['feedback']} for q in questions],
                           'curriculum_status':'original_draft_not_officially_approved'}
-                db.execute('INSERT INTO attempts VALUES(?,?,?,?,?,?,?,?)',
+                db.execute('INSERT INTO attempts(student_id,request_id,lesson_id,fingerprint,score,total,result,created) VALUES(?,?,?,?,?,?,?,?)',
                            (student['id'],request_id,lesson_id,fingerprint,score,len(questions),json.dumps(result,ensure_ascii=False),now))
                 return 201, result
             if method == 'POST' and path == '/v1/rotate-code':
@@ -263,7 +265,7 @@ class ClassroomApp:
                 environ.get('REMOTE_ADDR','unknown'))
         except ApiError as error:
             status, payload = error.status, {'error':error.message}
-        except (sqlite3.Error, OSError):
+        except DATABASE_ERRORS + (OSError,):
             status, payload = 503, {'error':'Service temporarily unavailable'}
         except Exception:
             status, payload = 500, {'error':'Internal service error'}
@@ -277,6 +279,13 @@ class ClassroomApp:
 
 
 def create_app():
-    folder = Path(os.environ.get('CLASSROOM_DATA_DIR','/data'))
-    folder.mkdir(parents=True,exist_ok=True,mode=0o700)
-    return ClassroomApp(folder / 'classrooms.sqlite3', os.environ.get('TEACHER_INVITE',''))
+    database_url = os.environ.get('DATABASE_URL', '')
+    if database_url:
+        if not database_url.startswith(('postgres://', 'postgresql://')):
+            raise RuntimeError('DATABASE_URL must be a PostgreSQL connection URL')
+        return ClassroomApp(database_url, os.environ.get('TEACHER_INVITE', ''))
+    if os.environ.get('REQUIRE_EXTERNAL_DATABASE') == '1':
+        raise RuntimeError('External database is required; local ephemeral storage is disabled')
+    folder = Path(os.environ.get('CLASSROOM_DATA_DIR', '/data'))
+    folder.mkdir(parents=True, exist_ok=True, mode=0o700)
+    return ClassroomApp(folder / 'classrooms.sqlite3', os.environ.get('TEACHER_INVITE', ''))
