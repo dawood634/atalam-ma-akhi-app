@@ -194,5 +194,14 @@
       "evidence": null,
       "verified_on": null
     }
+  },
+  "budget_policy": {
+    "free_only": true,
+    "paid_services_authorized": false,
+    "proposed_services": [
+      "Render Free",
+      "Neon Free"
+    ],
+    "deployed": false
   }
 }
